@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import MapView from 'react-native-maps';
+import MapView from 'react-native-maps-battery';
 import isEqual from 'lodash.isequal';
 
 class MapViewDirections extends Component {
