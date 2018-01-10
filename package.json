@@ -1,5 +1,5 @@
 {
-  "name": "react-native-maps-directions",
+  "name": "react-native-maps-directions-battere",
   "version": "1.4.0",
   "description": "Directions Component for react-native-maps",
   "main": "index.js",
@@ -30,7 +30,7 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "react-native-maps": ">=0.12.1"
+    "react-native-maps-battery": ">=0.12.1"
   },
   "private": false,
   "dependencies": {
