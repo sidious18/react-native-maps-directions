@@ -143,6 +143,7 @@ class MapViewDirections extends Component {
 			onError, // eslint-disable-line no-unused-vars
 			mode, // eslint-disable-line no-unused-vars
 			language, // eslint-disable-line no-unused-vars
+			zIndex,
 			...props
 		} = this.props;
 
@@ -182,6 +183,7 @@ MapViewDirections.propTypes = {
 	onError: PropTypes.func,
 	mode: PropTypes.oneOf(['driving', 'bicycling', 'transit', 'walking']),
 	language: PropTypes.string,
+	zIndex: PropTypes.number,
 };
 
 export default MapViewDirections;
