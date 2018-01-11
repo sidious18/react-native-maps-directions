@@ -143,12 +143,11 @@ class MapViewDirections extends Component {
 			onError, // eslint-disable-line no-unused-vars
 			mode, // eslint-disable-line no-unused-vars
 			language, // eslint-disable-line no-unused-vars
-			zIndex,
 			...props
 		} = this.props;
 
 		return (
-			<MapView.Polyline coordinates={this.state.coordinates} {...props} />
+			<MapView.Polyline zIndex={this.props.zIndex} coordinates={this.state.coordinates} {...props} />
 		);
 	}
 
