@@ -25,10 +25,8 @@ class MapViewDirections extends Component {
 	}
 
 	componentWillReceiveProps(nextProps) {
-		if (this.props.rebuildOnMapToggeling) {
-			if ((nextProps.origin != this.props.origin) || (nextProps.destination != this.props.destination) || !isEqual(nextProps.waypoints, this.props.waypoints)) {
-				this.resetState(this.fetchAndRenderRoute);
-			}
+		if (!isEqual(nextProps.origin, this.props.origin) || (!isEqual(nextProps.destination, this.props.destination)) || !isEqual(nextProps.waypoints, this.props.waypoints)) {
+			this.resetState(this.fetchAndRenderRoute);
 		}
 	}
 
@@ -184,7 +182,6 @@ MapViewDirections.propTypes = {
 	onError: PropTypes.func,
 	mode: PropTypes.oneOf(['driving', 'bicycling', 'transit', 'walking']),
 	language: PropTypes.string,
-	rebuildOnMapToggeling: PropTypes.bool.isRequired,
 };
 
 export default MapViewDirections;
