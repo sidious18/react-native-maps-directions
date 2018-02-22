@@ -1,6 +1,6 @@
 {
   "name": "react-native-maps-directions-battere",
-  "version": "1.4.23",
+  "version": "1.4.24",
   "description": "Directions Component for react-native-maps",
   "main": "index.js",
   "scripts": {
